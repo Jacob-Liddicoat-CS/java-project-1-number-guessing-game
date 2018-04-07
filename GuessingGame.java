@@ -28,6 +28,9 @@ public class GuessingGame {
 			System.out.println("Your guess is too high");
 		}
 	    }
+	    System.out.println("You win");
+	    System.out.println("The number was " + numberToGuess);
+	    System.out.println("It took you " + numberOfTries + " tries");
 	}
 
 }
