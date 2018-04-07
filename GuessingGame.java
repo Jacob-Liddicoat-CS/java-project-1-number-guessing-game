@@ -9,11 +9,16 @@ public class GuessingGame {
 		int numberOfTries = 0;
 		Scanner input = new Scanner(System.in);
 		int guess;
+		boolean win = false;
+
+		while (win == false) {
 
 		System.out.println("Guess a number between 1 and 100: ");
 		guess = input.nextInt();
+		numberOfTries++;
 
 		if (guess == numberToGuess) {
+			win = true;
 
 		}
 		else if (guess < numberToGuess) {
@@ -22,6 +27,7 @@ public class GuessingGame {
 		else if (guess > numberToGuess) {
 			System.out.println("Your guess is too high");
 		}
+	    }
 	}
 
 }
